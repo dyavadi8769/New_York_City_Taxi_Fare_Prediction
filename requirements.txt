@@ -6,3 +6,4 @@ tensorflow
 seaborn
 pymongo
 xgboost
+tpot
