@@ -7,12 +7,25 @@ body {
     background-size: cover; /* Cover the entire page */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    color: #fff; /* White text for better visibility */
+    color: #e2cdcd; /* Black text for better visibility */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
     height: 90vh; /* Full viewport height */
+    position: relative; /* Required for absolute positioning of the pseudo-element */
+}
+
+/* Adding translucent overlay */
+body::before {
+    content: ""; /* Necessary for the pseudo-element to work */
+    position: absolute; /* Position absolutely inside the body */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1; /* Ensures the overlay is behind the content */
 }
 
 /* Container for main content and footer */
@@ -20,49 +33,50 @@ body {
     margin: auto;
     text-align: center;
     width: 100%;
+    z-index: 1; /* Ensures text appears above the background overlay */
 }
 
 /* Styling for the heading */
 .container-heading {
     color: white;
-    font-size: 24px; /* Appropriate size for headings */
-    text-shadow: 2px 2px 4px #000; /* Text shadow for better readability */
+    font-size: 24px;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .description {
     font-style: italic;
-    font-size: 18px; /* Size for description */
-    color: #ddd; /* Lighter color for subtitle */
-    text-shadow: 2px 2px 4px #000; /* Text shadow for readability */
+    font-size: 18px;
+    color: #ddd;
+    text-shadow: 2px 2px 4px #000;
 }
 
 /* Form styling */
 .form-input {
-    width: 30%; /* Width adjusted for form inputs */
-    padding: 6px; /* Padding for text boxes */
-    margin: 0 auto; /* Removed vertical margin to eliminate gaps */
+    width: 30%;
+    padding: 6px;
+    margin: 0 auto;
     display: block;
     border: none;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.7);
     color: #333;
-    font-size: 12px; /* Font size for text in input */
+    font-size: 12px;
 }
 
 .myButton {
     width: 15%;
     padding: 10px;
-    margin: 10px auto 20px; /* Adjusted margin to bring closer to input fields */
+    margin: 10px auto 20px;
     border: none;
     background-color: #2980b9;
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px; /* Font size for button text */
+    font-size: 16px;
 }
 
 .myButton:hover {
-    background-color: #3498db; /* Hover effect for button */
+    background-color: #3498db;
 }
 
 /* Footer styling */
@@ -70,22 +84,22 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(44, 62, 80, 0.8); /* Slightly transparent background */
+    background-color: rgba(44, 62, 80, 0.8);
     color: white;
     text-align: center;
-    padding: 10px 0; /* Padding for footer */
+    padding: 10px 0;
 }
 
 .footer a {
     color: #fff;
-    margin: 0 10px; /* Margin for links in footer */
+    margin: 0 10px;
     text-decoration: none;
 }
 
 .footer-description {
-    font-size: 12px; /* Font size for footer description */
+    font-size: 12px;
 }
 
 .contact-icon {
-    margin: 0 5px; /* Margin for icons */
+    margin: 0 5px;
 }
