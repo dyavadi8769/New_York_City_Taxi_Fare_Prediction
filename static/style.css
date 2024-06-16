@@ -1,0 +1,91 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../static/nyc1.jpg'); /* Confirm the correct path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #fff; /* White text for better visibility */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    height: 90vh; /* Full viewport height */
+}
+
+/* Container for main content and footer */
+.container, .footer {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styling for the heading */
+.container-heading {
+    color: white;
+    font-size: 24px; /* Appropriate size for headings */
+    text-shadow: 2px 2px 4px #000; /* Text shadow for better readability */
+}
+
+.description {
+    font-style: italic;
+    font-size: 18px; /* Size for description */
+    color: #ddd; /* Lighter color for subtitle */
+    text-shadow: 2px 2px 4px #000; /* Text shadow for readability */
+}
+
+/* Form styling */
+.form-input {
+    width: 30%; /* Width adjusted for form inputs */
+    padding: 6px; /* Padding for text boxes */
+    margin: 0 auto; /* Removed vertical margin to eliminate gaps */
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    color: #333;
+    font-size: 12px; /* Font size for text in input */
+}
+
+.myButton {
+    width: 15%;
+    padding: 10px;
+    margin: 10px auto 20px; /* Adjusted margin to bring closer to input fields */
+    border: none;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Font size for button text */
+}
+
+.myButton:hover {
+    background-color: #3498db; /* Hover effect for button */
+}
+
+/* Footer styling */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.8); /* Slightly transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Padding for footer */
+}
+
+.footer a {
+    color: #fff;
+    margin: 0 10px; /* Margin for links in footer */
+    text-decoration: none;
+}
+
+.footer-description {
+    font-size: 12px; /* Font size for footer description */
+}
+
+.contact-icon {
+    margin: 0 5px; /* Margin for icons */
+}
