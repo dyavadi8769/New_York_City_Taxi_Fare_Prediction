@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Taxi Fare Prediction</title>
+    <!-- Add FontAwesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Website Title -->
+    <div class="container">
+        <h2 class='container-heading'><span class='heading_first'>New York Taxi </span><span class="heading_second">Fare Prediction App</span></h2>
+        <div class='description'>
+            <p>A Machine Learning Web App, Built with Flask</p>
+        </div>
+    </div>
+    <h1>Enter the Ride Details Below</h1>
+    <!-- Prediction Form -->
+        <div class='div2'>
+            <form action="{{ url_for('index') }}" method="POST">
+
+                <input class="form-input" type="text" name="Fare_class" placeholder="0 is Premium and 1 is Standard"><br>   
+                <input class="form-input" type="text" name="Passenger_count" placeholder="Total number of passengers"><br>
+                <input class="form-input" type="text" name="Year" placeholder="Year of the Ride"><br>
+                <input class="form-input" type="text" name="Month" placeholder="Month of the Ride"><br>
+                <input class="form-input" type="text" name="Day" placeholder="Day of the Ride"><br>
+                <input class="form-input" type="text" name="Hour" placeholder="Hour of the Ride in 24 hour format"><br>
+                <input class="form-input" type="text" name="Minutes" placeholder="Minutes of the Ride"><br>
+                <input class="form-input" type="text" name="Part_of_day" placeholder="For AM : 0, PM: 1"><br>
+                <input class="form-input" type="text" name="Distance_Travelled" placeholder="Ride Total Distance"><br>
+
+			<input type="submit" class="myButton" value="Predict Score">
+        	</form>
+        </div>
+
+        <div class="footer">
+            <div class="contact">
+                <a target="_blank" href="https://github.com/dyavadi8769?tab=repositories"><i class="fab fa-github fa-lg contact-icon"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/sai-kiran-reddy-dyavadi-a108011aa/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+                <a target="_blank" href="https://www.instagram.com/sai_kiran_dyavadi/"><i class="fab fa-instagram fa-lg contact-icon"></i></a>
+            </div>
+            <p class='footer-description'>Made with ❤️ by Sai Kiran Dyavadi.</p>
+        </div>
+        
+ 
+
+</body>
+</html>

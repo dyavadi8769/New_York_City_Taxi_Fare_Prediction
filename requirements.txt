@@ -7,3 +7,4 @@ seaborn
 pymongo
 xgboost
 tpot
+Flask
