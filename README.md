@@ -14,7 +14,7 @@ The Taxi Fare Predictor leverages historical taxi fare data to train a machine l
    - Drop unwanted columns and handle any missing values.
 
 2. **Feature Engineering:**
-   - Create new features such as `distance_travelled` using haversine distance from `pickup_longitude`, `pickup_latitude`, `dropoff_longitude`, `dropoff_latitude`  and `part_of_day`.
+   - Create new features such as `distance_travelled` using haversine distance from `pickup_longitude`, `pickup_latitude`, `dropoff_longitude`, `dropoff_latitude`  and  another feature `part_of_day` AM (0) / PM (1) using `Hour` feature.
 
 
 3. **Model Training:**
