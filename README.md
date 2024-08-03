@@ -33,8 +33,8 @@ The Taxi Fare Predictor leverages historical taxi fare data to train a machine l
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/dyavadi8769/IPL_Innings_Wise_Score_Predictor.git
-   cd ipl-innings-score-predictor
+   git clone https://github.com/dyavadi8769/New_York_City_Taxi_Fare_Prediction.git
+   cd New_York_City_Taxi_Fare_Prediction
 
 2.  **Create a virtual environment and activate it:**
     ```bash
